@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>OpilioCraft.StringTemplate</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Carsten Schäfer</Authors>
+    <Description>Simple parser supporting string templates similar to F# interpolated string.</Description>
+    <Copyright>Copyright (c) 2022 by Carsten Schäfer</Copyright>
+    <RepositoryUrl>https://github.com/EinQuadrat/OpilioCraft.StringTemplate.git</RepositoryUrl>
+    <PackageTags>OpilioCraft;FSharp;FParsec</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DebugType>portable</DebugType>
+    <RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>True</RunAnalyzersDuringLiveAnalysis>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Model.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="Runtime.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>
