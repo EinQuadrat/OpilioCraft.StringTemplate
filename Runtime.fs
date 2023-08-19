@@ -6,7 +6,7 @@ type Runtime () =
     static let mutable parserCache : Map<string, StringTemplate> = Map.empty
 
     static let parseStringTemplate input : StringTemplate =
-        FParsec.CharParsers.run Parser.pStringTemplate input
+        run Parser.pStringTemplate input
         |> function
             | Success(stringTemplate, _, _) -> stringTemplate
             | Failure(_, _, _) -> raise <| InvalidStringTemplateException input
