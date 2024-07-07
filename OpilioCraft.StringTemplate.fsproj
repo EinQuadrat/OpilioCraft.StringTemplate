@@ -4,10 +4,10 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>OpilioCraft.StringTemplate</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Authors>Carsten Schäfer</Authors>
     <Description>Simple parser supporting string templates similar to F# interpolated string.</Description>
-    <Copyright>Copyright (c) 2022 by Carsten Schäfer</Copyright>
+    <Copyright>Copyright (c) 2022-2024 by Carsten Schäfer</Copyright>
     <RepositoryUrl>https://github.com/EinQuadrat/OpilioCraft.StringTemplate.git</RepositoryUrl>
     <PackageTags>OpilioCraft;FSharp;FParsec</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="FSharp.Core" Version="8.0.100" />
+    <PackageReference Update="FSharp.Core" Version="8.0.300" />
   </ItemGroup>
 
 </Project>
